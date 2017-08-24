@@ -3,7 +3,14 @@ const lists = (state=[], action) => {
     case 'jump':
       return state.map(item =>
         {
-          return{...item, price: item.price*(0.95 + 0.1*Math.random())}
+          let percentChangeAmount = -5+10*Math.random();
+          let newPrice = item.price*(1 + percentChangeAmount/100)
+          return{
+            ...item,
+            totalChangeAmount: item.totalChangeAmount + newPrice - item.price,
+            price: newPrice,
+            percentChangeAmount: percentChangeAmount,
+          }
         }
       )
     default:

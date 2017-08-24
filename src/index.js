@@ -11,19 +11,25 @@ let initialState = {
       id: 0,
       code: 'ahihi',
       company: 'DTT',
-      price: 20
+      price: 20,
+      percentChangeAmount: 0,
+      totalChangeAmount: 0
     },
     {
       id: 1,
       code: 'HUHU',
       company: 'Quant Edge',
       price: 20,
+      percentChangeAmount: 0,
+      totalChangeAmount: 0
     },
     {
       id: 2,
       code: 'luloi',
       company: 'FRAMGIA',
-      price: 20
+      price: 20,
+      percentChangeAmount: 0,
+      totalChangeAmount: 0
     }
   ],
   filter: 'none'

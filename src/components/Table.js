@@ -10,6 +10,13 @@ class Table extends React.Component {
   render() {
     return(
       <table>
+        <tr>
+          <td>code</td>
+          <td>company</td>
+          <td>price</td>
+          <td>change</td>
+          <td>%change</td>
+        </tr>
         {this.props.lists.map(list => (
           <Row
             {...list}
