@@ -9,13 +9,13 @@ class Table extends React.Component {
   }
   render() {
     return(
-      <div>
+      <table>
         {this.props.lists.map(list => (
           <Row
             {...list}
             />
         ))}
-      </div>
+      </table>
     );
   }
 }

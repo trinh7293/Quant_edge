@@ -7,11 +7,11 @@ function myFunction(hoho) {
 
 const Row = ({ code, company, price}) =>
   (
-    <div>
-      <span>{code}</span>
-      <span>{company}</span>
-      <span>{price}</span>
-    </div>
+    <tr>
+      <td>{code}</td>
+      <td>{company}</td>
+      <td>{price}</td>
+    </tr>
 )
 
 Row.propTypes = {
