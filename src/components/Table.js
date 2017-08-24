@@ -2,20 +2,23 @@ import React from 'react'
 import Row from './Row'
 import PropTypes from 'prop-types'
 
-const Table = ({lists, onChangeClick}) => (
-  <div>
-    {lists.map(list => (
-      <Row
-        {...list}
-        onClick={() => onChangeClick()}
-        />
-    ))}
-    <button onClick={() => onChangeClick()}>change</button>
-  </div>
-  )
-
-
-
+class Table extends React.Component {
+  componentDidMount() {
+    let change = () => this.props.onChangeClick();
+    setInterval(change,1000)
+  }
+  render() {
+    return(
+      <div>
+        {this.props.lists.map(list => (
+          <Row
+            {...list}
+            />
+        ))}
+      </div>
+    );
+  }
+}
 
 Table.propTypes = {
   lists: PropTypes.arrayOf(
