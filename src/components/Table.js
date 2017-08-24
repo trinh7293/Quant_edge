@@ -2,13 +2,19 @@ import React from 'react'
 import Row from './Row'
 import PropTypes from 'prop-types'
 
-const Table = ({lists}) => (
-  <table>
+const Table = ({lists, onChangeClick}) => (
+  <div>
     {lists.map(list => (
-      <Row {...list} />
+      <Row
+        {...list}
+        onClick={() => onChangeClick()}
+        />
     ))}
-  </table>
-)
+    <button onClick={() => onChangeClick()}>change</button>
+  </div>
+  )
+
+
 
 
 Table.propTypes = {
@@ -16,9 +22,10 @@ Table.propTypes = {
     PropTypes.shape({
       code: PropTypes.string.isRequired,
       company: PropTypes.string.isRequired,
-      price: PropTypes.string.isRequired
+      price: PropTypes.number.isRequired
     }).isRequired
-  ).isRequired
+  ).isRequired,
+  onChangeClick: PropTypes.func.isRequired
 }
 
 export default Table

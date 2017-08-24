@@ -3,30 +3,33 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import App from './components/App'
-import switcher from './reducers'
+import AppLists from './reducers'
 
 let initialState = {
   lists: [
     {
+      id: 0,
       code: 'ahihi',
       company: 'DTT',
-      price: '14141412'
+      price: 20
     },
     {
+      id: 1,
       code: 'HUHU',
       company: 'Quant Edge',
-      price: '124414'
+      price: 30,
     },
     {
+      id: 2,
       code: 'luloi',
       company: 'FRAMGIA',
-      price: '124141241'
+      price: 40
     }
   ],
   filter: 'none'
 };
 
-let store = createStore(switcher, initialState);
+let store = createStore(AppLists, initialState);
 render(
   <Provider store={store}>
     <App />

@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import Table from '../components/Table'
+import { jump } from '../actions'
 
 const mapStateToProps = state => {
   return{
@@ -7,8 +8,17 @@ const mapStateToProps = state => {
   }
 }
 
+const mapDispatchToProps = dispatch => {
+  return {
+    onChangeClick: () => {
+      dispatch(jump())
+    }
+  }
+}
+
 const VisibleTable = connect(
   mapStateToProps,
+  mapDispatchToProps
 )(Table)
 
 export default VisibleTable

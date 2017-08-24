@@ -1,5 +1,10 @@
-const switcher = (state, action) => {
-  return state
-}
+import { combineReducers } from 'redux'
+import lists from './lists'
+import filter from './filter'
 
-export default switcher
+const AppLists = combineReducers({
+  lists,
+  filter
+})
+
+export default AppLists
