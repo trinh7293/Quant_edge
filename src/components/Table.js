@@ -14,8 +14,11 @@ class Table extends React.Component {
           <td>code</td>
           <td>company</td>
           <td>price</td>
-          <td>change</td>
-          <td>%change</td>
+          <td>volume</td>
+          <td>value</td>
+          <td>changePrice</td>
+          <td>%changePrice</td>
+          <td>totalChangeValue</td>
         </tr>
         {this.props.lists.map(list => (
           <Row

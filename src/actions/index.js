@@ -4,8 +4,9 @@ export const jump = () => {
   }
 }
 
-export const filter = () => {
+export const setFilter = filter => {
   return {
-    type: 'filter',
+    type: 'set_filter',
+    filter
   }
 }
