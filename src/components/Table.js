@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 class Table extends React.Component {
   componentDidMount() {
     let change = () => this.props.onChangeClick();
-    setInterval(change, 1000)
+    setInterval(change, 5000)
   }
   render() {
     return(

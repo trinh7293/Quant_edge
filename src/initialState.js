@@ -25,7 +25,7 @@ for (const [index, codeValue] of codes.entries()){
     volume: Math.round(1000 + 999000*Math.random()),
   })
 }
-export const initialState2 = {
+export const initialState = {
   lists,
   filter: 'SHOW_ALL'
 };

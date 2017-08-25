@@ -4,9 +4,9 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import App from './components/App'
 import AppLists from './reducers'
-import { initialState, initialState2 } from './initialState'
+import { initialState } from './initialState'
 
-let store = createStore(AppLists, initialState2);
+let store = createStore(AppLists, initialState);
 render(
   <Provider store={store}>
     <App />
