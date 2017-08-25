@@ -1,0 +1,9 @@
+.tabs {
+  display: 'flex',
+}
+.firstTab {
+  flex: 2;
+}
+.tab {
+  flex: 1;
+}

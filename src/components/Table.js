@@ -3,13 +3,10 @@ import Row from './Row'
 import PropTypes from 'prop-types'
 
 class Table extends React.Component {
-  componentDidMount() {
-    let change = () => this.props.onChangeClick();
-    setInterval(change, 5000)
-  }
+
   render() {
     return(
-      <table>
+      <table width='100%'>
         <tr>
           <td>code</td>
           <td>company</td>

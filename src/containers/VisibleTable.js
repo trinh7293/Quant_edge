@@ -6,11 +6,11 @@ const getVisibleTable = (lists, filter) => {
   switch(filter) {
     case 'SHOW_ALL':
       return lists
-    case 'SHOW_TOP':
+    case 'TOP_GAINERS':
       return lists.sort((a, b) => {
         return b.totalChangeValue - a.totalChangeValue;
       }).slice(0, 21)
-    case 'SHOW_BOTTOM':
+    case 'TOP_LOOSER':
       return lists.sort((a, b) => {
         return a.totalChangeValue - b.totalChangeValue;
       }).slice(0, 21)
