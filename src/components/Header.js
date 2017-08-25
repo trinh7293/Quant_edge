@@ -9,12 +9,12 @@ const Header = () => (
       All
     </ConnectFilter>
     {', '}
-    <ConnectFilter filter="SHOW_ASCENDING">
-      ASCENDING
+    <ConnectFilter filter="SHOW_TOP">
+      TOP
     </ConnectFilter>
     {', '}
-    <ConnectFilter filter="SHOW_DESCENDING">
-      DESCENDING
+    <ConnectFilter filter="SHOW_BOTTOM">
+      BOTTOM
     </ConnectFilter>
   </p>
 )

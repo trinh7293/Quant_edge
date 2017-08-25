@@ -27,7 +27,7 @@ for (const [index, codeValue] of codes.entries()){
 }
 export const initialState2 = {
   lists,
-  filter: 'none'
+  filter: 'SHOW_ALL'
 };
 
 

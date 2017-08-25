@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 class Table extends React.Component {
   componentDidMount() {
     let change = () => this.props.onChangeClick();
-    setInterval(change,1000)
+    setInterval(change, 1000)
   }
   render() {
     return(
@@ -16,8 +16,8 @@ class Table extends React.Component {
           <td>price</td>
           <td>volume</td>
           <td>value</td>
-          <td>changePrice</td>
-          <td>%changePrice</td>
+          <td>change</td>
+          <td>%change</td>
           <td>totalChangeValue</td>
         </tr>
         {this.props.lists.map(list => (

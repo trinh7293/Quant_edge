@@ -23,7 +23,7 @@ const Row = ({ code, company, price, volume, percentChangePrice, totalChangeValu
       <td>{value}</td>
       <td style= {color(percentChangePrice)}>{percentChangePrice.toFixed(2)}</td>
       <td style= {color(percentChangePrice)}>{changePrice.toFixed(2)}</td>
-      <td style= {color(totalChangeValue)}>{totalChangeValue.toFixed(2)}</td>
+      <td style= {color(totalChangeValue)}>{totalChangeValue}</td>
     </tr>
   )
 }
