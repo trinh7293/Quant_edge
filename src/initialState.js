@@ -17,7 +17,7 @@ let lists = [];
 
 for (const [index, codeValue] of codes.entries()){
   lists.push({
-    code: codeValue,
+    code: `${codeValue}.AX`,
     company: companies[index],
     totalChangeValue: 0,
     percentChangePrice: 0,
