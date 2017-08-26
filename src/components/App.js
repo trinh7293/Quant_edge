@@ -5,6 +5,7 @@ import Tabs from './Tabs'
 const App = () => (
   <div>
     <Tabs />
+    <VisibleTable />
   </div>
 )
 

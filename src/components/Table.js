@@ -15,6 +15,7 @@ class Table extends React.Component {
             <th>Value</th>
             <th>Change</th>
             <th>%Change</th>
+            <th>Totalchange</th>
           </tr>
           {this.props.lists.map(list => (
             <Row

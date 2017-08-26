@@ -5,18 +5,32 @@
     <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
     <style>
       .tabs {
+        height: 48px;
+        background-color: #00bcd4;
+        position: relative;
       }
       .tabs > div:first-child {
-        height: 50px;
-        display: block !important;
+        position: absolute;
+        width: 35% !important;
+        right: 0;
       }
       .tabs > div:nth-child(2) {
-        display: none;
+        position: absolute;
+        width: 35% !important;
+        right: 0;
+        top: 48px;
       }
-      .tab {
+      .title {
+        position: absolute;
+        z-index: 1;
+        top: 2px;
+        left: 30px;
+        color: #fff;
+      }
+/*      .tab {
         width : 15% !important;
         float: right;
-      }
+      }*/
       table { border-collapse: collapse; }
       .main-table tr {
          border-bottom: 1px solid #ccc;

@@ -33,21 +33,18 @@ class TabsExampleControlled extends React.Component {
 
   render() {
     return (
-      <Tabs
-        className = 'tabs'
-        value={this.state.value}
-        onChange={this.handleChange}
-      >
-        <Tab className = 'tab' label="TOP LOOSER" value="TOP_LOOSER">
-          <VisibleTable />
-        </Tab>
-        <Tab className = 'tab' label="TOP GAINERS" value="TOP_GAINERS">
-          <VisibleTable />
-        </Tab>
-        <Tab className = 'tab' label="ALL" value="SHOW_ALL">
-          <VisibleTable />
-        </Tab>
-      </Tabs>
+      <div>
+        <h3 className='title'>S&P/ASX</h3>
+        <Tabs
+          className = 'tabs'
+          value={this.state.value}
+          onChange={this.handleChange}
+        >
+          <Tab className = 'tab' label="ALL" value="SHOW_ALL" />
+          <Tab className = 'tab' label="TOP GAINERS" value="TOP_GAINERS" />
+          <Tab className = 'tab' label="TOP LOOSER" value="TOP_LOOSER" />
+        </Tabs>
+      </div>
     );
   }
 
