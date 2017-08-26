@@ -5,13 +5,13 @@ import { jump } from '../actions'
 function sortTop(arr) {
   return arr.slice(0).sort((a, b) => {
     return b.totalChangeValue - a.totalChangeValue;
-  });
+  }).slice(0, 21);
 }
 
 function sortBot(arr) {
   return arr.slice(0).sort((a, b) => {
     return a.totalChangeValue - b.totalChangeValue;
-  });
+  }).slice(0, 21);
 }
 
 const getVisibleTable = (lists, filter) => {
@@ -19,9 +19,9 @@ const getVisibleTable = (lists, filter) => {
     case 'SHOW_ALL':
       return lists
     case 'TOP_GAINERS':
-      return sortTop(lists).slice(0, 21)
+      return sortTop(lists)
     case 'TOP_LOOSER':
-      return sortBot(lists).slice(0, 21)
+      return sortBot(lists)
   }
 }
 

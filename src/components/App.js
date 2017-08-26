@@ -3,7 +3,7 @@ import VisibleTable from '../containers/VisibleTable'
 import Tabs from './Tabs'
 
 const App = () => (
-  <div>
+  <div className='container'>
     <Tabs />
     <VisibleTable />
   </div>
