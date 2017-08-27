@@ -51,7 +51,7 @@ class TabsExampleControlled extends React.Component {
   componentDidMount() {
     let dispatch = this.props.dispatch;
     let change = () => dispatch(jump());
-    setInterval(change, 1000)
+    setInterval(change, 5000)
   }
 }
 TabsExampleControlled = connect()(TabsExampleControlled)

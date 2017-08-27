@@ -1,10 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function myFunction(hoho) {
-    alert(hoho)
-}
-
 
 const Row = ({ code, company, price, volume, percentChangePrice, totalChangeValue}) => {
   const color = (value) => {
