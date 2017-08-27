@@ -3,28 +3,25 @@ import Row from './Row'
 import PropTypes from 'prop-types'
 
 class Table extends React.Component {
-  componentDidMount() {
-    let change = () => this.props.onChangeClick();
-    setInterval(change, 5000)
-  }
+
   render() {
     return(
-      <table>
-        <tr>
-          <td>code</td>
-          <td>company</td>
-          <td>price</td>
-          <td>volume</td>
-          <td>value</td>
-          <td>change</td>
-          <td>%change</td>
-          <td>totalChangeValue</td>
-        </tr>
-        {this.props.lists.map(list => (
-          <Row
-            {...list}
+      <table border='1' width='100%' className='main-table'>
+        <tbody>
+          <tr>
+            <th>Code</th>
+            <th>Company</th>
+            <th>Price</th>
+            <th>Value</th>
+            <th>Change</th>
+            <th>%Change</th>
+          </tr>
+          {this.props.lists.map(list => (
+            <Row
+              {...list}
             />
-        ))}
+          ))}
+        </tbody>
       </table>
     );
   }

@@ -5,11 +5,14 @@ import { createStore } from 'redux'
 import App from './components/App'
 import AppLists from './reducers'
 import { initialState } from './initialState'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-let store = createStore(AppLists, initialState);
+let store = createStore(AppLists);
 render(
   <Provider store={store}>
-    <App />
+    <MuiThemeProvider>
+      <App />
+    </MuiThemeProvider>
   </Provider>,
   document.getElementById('root')
 )

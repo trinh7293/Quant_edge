@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <title>Hoang Duc Trinh</title>
-    <link rel="stylesheet" href="styles/style.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
-
+    <style>
+      .container {
+        width: 80%;
+        margin: auto;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+      }
+      .tabs {
+        height: 48px;
+        background-color: #00bcd4;
+        position: relative;
+      }
+      .tabs > div:first-child {
+        position: absolute;
+        width: 35% !important;
+        right: 0;
+      }
+      .tabs > div:nth-child(2) {
+        position: absolute;
+        width: 35% !important;
+        right: 0;
+        top: 48px;
+      }
+      .title {
+        position: absolute;
+        z-index: 1;
+        top: 2px;
+        left: 146px;
+        color: #fff;
+      }
+      table { border-collapse: collapse; }
+      .main-table tr {
+         border-bottom: 1px solid #ccc;
+      }
+      .main-table th {
+        font-weight: inherit;
+        font-size: 15px;
+        color: #9c9c82;
+        text-align: left;
+      }
+      .main-table tr th:first-child {
+        padding-left: 10px;
+      }
+      .main-table tr td:first-child {
+        color: blue;
+        padding-left: 10px;
+      }
+      .main-table tr td:nth-child(2) {
+        color: #787873;
+      }
+      .main-table tr td {
+        padding: 10px 0px;
+      }
+    </style>
 </head>
 <body>
   <div id='root'></div>

@@ -1,10 +1,10 @@
 import React from 'react'
 import VisibleTable from '../containers/VisibleTable'
-import Header from './Header'
+import Tabs from '../containers/Tabs'
 
 const App = () => (
-  <div>
-    <Header />
+  <div className='container'>
+    <Tabs />
     <VisibleTable />
   </div>
 )
