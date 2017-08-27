@@ -7,7 +7,7 @@ import AppLists from './reducers'
 import { initialState } from './initialState'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-let store = createStore(AppLists, initialState);
+let store = createStore(AppLists);
 render(
   <Provider store={store}>
     <MuiThemeProvider>

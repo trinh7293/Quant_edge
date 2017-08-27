@@ -5,12 +5,15 @@ describe('actions', () => {
     const expectedJump = {
       type: 'jump'
     }
-    const filter = 'ALL'
+    expect(jump()).toEqual(expectedJump)
+  })
+
+  it('should create an action to jump', () => {
     const expectedsetFilter = {
       type: 'set_filter',
       filter: 'ALL'
     }
-    expect(jump()).toEqual(expectedJump)
+    const filter = 'ALL'
     expect(setFilter(filter)).toEqual(expectedsetFilter)
   })
 })

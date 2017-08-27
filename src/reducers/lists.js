@@ -1,4 +1,6 @@
-const lists = (state=[], action) => {
+import { initialState } from '../initialState'
+
+const lists = (state = initialState.lists, action) => {
   switch(action.type){
     case 'jump':
       return state.map(item =>

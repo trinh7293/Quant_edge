@@ -1,4 +1,4 @@
-const filter = (state='SHOW_ALL', action) => {
+const filter = (state = 'SHOW_ALL', action) => {
   switch(action.type){
     case 'set_filter':
       return action.filter
