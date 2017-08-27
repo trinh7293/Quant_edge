@@ -1,6 +1,6 @@
 import React from 'react'
 import VisibleTable from '../containers/VisibleTable'
-import Tabs from './Tabs'
+import Tabs from '../containers/Tabs'
 
 const App = () => (
   <div className='container'>
